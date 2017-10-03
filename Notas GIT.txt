@@ -30,3 +30,6 @@ git config --global user.email <"jcfonsecagit@gmail.com">
 
 git commit -m "Início do projeto"
 A flag -m indica que o conteudo a seguir é a mensagem que estara sendo feita no commit.
+
+working directory, index e HEAD
+Working directory representa o estado atual dos arquivos no repositório. Podemos utilizar o comando git add para adicioná-los ao index, ou staging area, que representa uma visão preliminar das modificações que queremos definir para nosso projeto, comparando essas ao HEAD, o último passo completo do nosso projeto, que serve de referência para comparação do trabalho com o working directory.
