@@ -33,3 +33,45 @@ A flag -m indica que o conteudo a seguir é a mensagem que estara sendo feita no
 
 working directory, index e HEAD
 Working directory representa o estado atual dos arquivos no repositório. Podemos utilizar o comando git add para adicioná-los ao index, ou staging area, que representa uma visão preliminar das modificações que queremos definir para nosso projeto, comparando essas ao HEAD, o último passo completo do nosso projeto, que serve de referência para comparação do trabalho com o working directory.
+
+Rode o comando git add -i
+$ git add -i
+           staged     unstaged path
+  1:    unchanged        +1/-0 index.html
+
+*** Commands ***
+  1: status    2: update    3: revert    4: add untracked
+  5: patch     6: diff      7: quit      8: help
+What now>
+Para adicionar arquivos alterados, utilize a opção update. Você pode digitar tanto o número, quanto a palavra escrita como também somente a primeira letra dela. No caso, utilizamos aqui a abreviação u e pressione enter.
+What now> u
+           staged     unstaged path
+  1:    unchanged        +1/-0 index.html
+Aparecerá uma listagem dos arquivos modificados, com um número atribuído a cada arquivo. Digite o número que representa o arquivo index.html e pressione enter .
+Update>> 1
+           staged     unstaged path
+* 1:    unchanged        +1/-0 index.html
+Aparecerá um asterisco ao lado do número do arquivo, indicando que ele será adicionado. Pressione enter novamente para confirmar e voltar ao menu principal.
+Update>>
+updated one path
+
+*** Commands ***
+  1: status    2: update    3: revert    4: add untracked
+  5: patch     6: diff      7: quit      8: help
+Se quiser, confira as modificações. Utilize a opção status para conferir que o arquivo index.html foi adicionado corretamente, digitando a opção e pressionando enter.
+What now> status
+           staged     unstaged path
+  1:        +1/-0      nothing index.html
+
+*** Commands ***
+  1: status    2: update    3: revert    4: add untracked
+  5: patch     6: diff      7: quit      8: help
+Utilize a opção quit para terminar a interação!
+What now> 7
+Bye.
+$
+Agora você pode f
+
+git commit -a
+
+A opção -a inclui imediatamente no commit todos os arquivos modificados ou removidos! Porém, ela não adiciona os arquivos novos. Podemos combinar a opção de mensagem com git commit -a -m 'Mensagem de commit' para não precisar escrever a mensagem no editor padrão do console.
