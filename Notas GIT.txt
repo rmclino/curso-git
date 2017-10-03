@@ -1,0 +1,32 @@
+Organizar o sistema de trabalho em equipe, centralizando os arquivos em um servidor.
+Uma das funções do Git é centralizar os arquivos de trabalho, impedindo que haja confusão sobre o que foi e não foi modificado por cada um.
+
+Marcar diferentes versões para o seu projeto.
+O Git permite que você marque um dado estado do seu projeto com uma etiqueta, que pode ser usada para determinar uma versão dele.
+
+Manter um histórico das alterações feitas no projeto.
+Cada alteração que você faz fica gravada em um histórico, podendo ser visualizada e restaurada a qualquer instante.
+
+Clonando repositorios
+git clone <https://github.com/jcfonsecagit/repositorio>+<.git>
+
+Para visualizar as tags de um projeto, basta entrar no diretório do repositório e digitar o comando git tag.
+
+git checkout v0.1
+troca de versões
+
+git diff v0.1 v0.2
+vemos as alterações entre uma versão e a outra. No caso, a frase está com um símbolo - na frente, indicando que esta foi removida da versão 0.1 pra 0.2.
+
+git ls-files
+Mostra os arquivos que esta controlando
+git init
+Inicia o tracking de um projeto (pasta)
+git status
+checa o status
+
+git config --global user.name <"João Carlos Fonseca">
+git config --global user.email <"jcfonsecagit@gmail.com">
+
+git commit -m "Início do projeto"
+A flag -m indica que o conteudo a seguir é a mensagem que estara sendo feita no commit.
